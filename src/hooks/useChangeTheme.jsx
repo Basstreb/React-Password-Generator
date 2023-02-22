@@ -1,17 +1,17 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
 
 const useChangeTheme = () => {
-  const [changeTheme, setChangeTheme] = useState(false)
+  const [changeTheme, setChangeTheme] = useState(false);
 
   useEffect(() => {
     if (changeTheme) {
-      document.body.classList.add("dark")
+      document.body.classList.add('dark');
     } else {
-      document.body.classList.remove("dark")
+      document.body.classList.remove('dark');
     }
-  }, [changeTheme])
+  }, [changeTheme]);
 
-  return { changeTheme, setChangeTheme }
-}
+  return { changeTheme, setChangeTheme };
+};
 
-export default useChangeTheme
+export default useChangeTheme;
